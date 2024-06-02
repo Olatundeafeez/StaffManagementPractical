@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StaffManagementPractical.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,9 +15,12 @@ namespace StaffManagementPractical
         public int StaffNumber { get; set; }
         public DateTime HireDate { get; set; }
         public bool IsClockedIn { get; set; }
-
+        public bool IsClockedOut { get; set; }
+        public DateTime TimeOfArrival { get; set; }
+        public DateTime ClockoutTime { get; set; }
+        public bool IsLate { get; set; }
         public bool IsActive { get; set; }
-
         public bool IsloggedIn { get; set; }
+        public Role Role { get; set; }
     }
 }
